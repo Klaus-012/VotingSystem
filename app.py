@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['GET', 'POST'])
 def index():
     error = None
     if request.method == 'POST':
