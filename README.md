@@ -1,2 +1,0 @@
-# VotingSystem
-a voting system
