@@ -47,4 +47,4 @@ def facial_recognition():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, threaded=True)
+    app.run()
