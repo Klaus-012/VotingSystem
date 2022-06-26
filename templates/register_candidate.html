@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}
+Voting System
+{% endblock %}
+{% block content%}
+<main class="container m-auto pt-3">
+    <div class="row mb-4">
+        <div class="card">
+            <div class="card-body p-4">
+                <h4 class="text-secondary bg-white">Candidate registration</h4>
+                <hr />
+                <div class="row mt-3">
+                    <form class="form" action="">
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                              <h6 for="formFile" class="form-label text-secondary">Candidate's Display</h6>
+                              <input class="form-control" type="file" id="formFile" required>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 for="formFile" class="form-label text-secondary">Electoral Post</h6>
+                                <select class="form-control" type="file" id="position" required>
+                                    <option value="">-- select post --</option>
+                                    <option value="1">President</option>
+                                    <option value="2">Secretary General</option>
+                                    <option value="3">Speaker</option>
+                                    <option value="4">Treasurer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row form-group">
+                            <div class="col-md-3 mb-2">
+                                <h6 class="mb-2 text-secondary">First name</h6>
+                                <input class="form-control" type="text" required>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <h6 class="mb-2 text-secondary">Last name</h6>
+                                <input class="form-control" type="text" required>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <h6 class="mb-2 text-secondary">Date of birth</h6>
+                                <input class="form-control" type="date" required>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <h6 class="mb-2 text-secondary">ID or Passport Number</h6>
+                                <input class="form-control" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="float-end">
+                                <button class="btn btn-block btn-success" type="submit" value="create">Add Candidate</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="input-group">
+                        <input type="search" class="input-group-text col-md-3 me-3 bg-light" placeholder="Search">
+                        <button type="submit" value="search" class="btn btn-block btn-primary btn-sm col-md-1">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div class="row card mt-3">
+                    <div class="card-body">
+                        <table class="table">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>ID Number</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>30033003</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane</td>
+                            <td>Doe</td>
+                            <td>30033003</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jim</td>
+                            <td>Doe</td>
+                            <td>30033003</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}
