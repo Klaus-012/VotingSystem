@@ -4,8 +4,8 @@ import cv2
 app = Flask(__name__)
 
 
-@app.route("/", methods=['GET', 'POST'])
-def login():
+@app.route("/", methods=['POST'])
+def index():
     error = None
     if request.method == 'POST':
         if request.form['email'] == 'user@mail.com' or request.form['password'] == 'user':
